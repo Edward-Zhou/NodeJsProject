@@ -1,0 +1,2 @@
+E:\Edward\NodeJsProject\obj\Debug\NodejsApp.njsprojResolveAssemblyReference.cache
+E:\Edward\NodeJsProject\bin\Microsoft.NodejsTools.WebRole.dll

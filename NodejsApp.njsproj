@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bdd86b3c-e217-487e-9b22-13a91b5ee4ce}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>Scripts\http\socket_client.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="censorify\censortext.js" />
+    <Compile Include="Scripts\http\socket_client.js" />
+    <Content Include="GetStartedNodeJs\GetStartedNodeJs\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Compile Include="Scripts\http\http_client_get.js" />
+    <Compile Include="Scripts\http\http_client_static.js" />
+    <Compile Include="GetStartedNodeJs\GetStartedNodeJs\scripts\ai.0.22.9-build00167.js" />
+    <Compile Include="GetStartedNodeJs\GetStartedNodeJs\scripts\ai.0.22.9-build00167.min.js" />
+    <Compile Include="Scripts\http\http_server_external.js" />
+    <Compile Include="Scripts\http\http_server_get.js" />
+    <Compile Include="Scripts\http\http_server_post.js" />
+    <Compile Include="Scripts\http\http_server_static.js" />
+    <Content Include="Scripts\censorify\package.json" />
+    <Compile Include="Scripts\censorify\censortext.js" />
+    <Content Include="Scripts\http\hello.html" />
+    <Content Include="Scripts\http\TxtFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="censorify" />
+    <Folder Include="GetStartedNodeJs\" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\bin\" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\obj" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\obj\Debug" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\obj\Debug\TempPE" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\Properties" />
+    <Folder Include="GetStartedNodeJs\GetStartedNodeJs\scripts" />
+    <Folder Include="Scripts\censorify\" />
+    <Folder Include="Scripts\http\" />
+    <Folder Include="Scripts\readwords\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\node\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
